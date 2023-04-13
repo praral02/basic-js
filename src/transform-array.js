@@ -20,12 +20,6 @@ function transform(arr) {
   let cloneArray = [];
 
   for(let i = arr.length - 1; i >= 0; i--){
-    if(arr[0] === '--discard-prev'){ 
-      i += 1
-    }
-    if(arr[arr.length - 1] === '--discard-next'){ 
-      i -= 2
-    }
     if(arr[i] === '--discard-next'){ 
       i -= 2
     }
